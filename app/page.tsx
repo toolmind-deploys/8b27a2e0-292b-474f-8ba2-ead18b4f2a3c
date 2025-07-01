@@ -1,24 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function HomePage() {
-  console.log('[HomePage] Rendering the ToolMind AI intro page');
+  console.log('[HomePage] Rendering ToolMind AI introduction');
 
   return (
-    <main className="relative flex items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-purple-200 p-6">
-      <div className="absolute inset-0 -z-10 opacity-40 blur-3xl bg-gradient-to-br from-rose-100 via-sky-100 to-teal-200" />
-      <Card className="max-w-xl w-full shadow-xl bg-white/90 border border-slate-50">
+    <main className="relative flex items-center justify-center min-h-screen overflow-hidden p-6">
+      {/* Background gradient */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-100 via-cyan-100 to-pink-200 opacity-40 blur-2xl" />
+      <Card className="max-w-2xl w-full shadow-xl border border-slate-200 bg-white/90 p-4">
         <CardHeader>
           <CardTitle className="text-3xl text-center mt-4">Welcome to ToolMind AI</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="space-y-4 text-center mb-6">
-            <p className="text-lg">
-              ToolMind AI is your real-time coding companion, ready to assist with clarity and creativity.
+          <div className="flex flex-col items-center space-y-4 mb-6">
+            <p className="text-lg text-gray-700">
+              ToolMind AI is a real-time coding companion that can assist you in building fast, efficient, and creative solutions.
             </p>
-            <p>
-              Explore how ToolMind AI can enhance your workflow, refine your code, and bring your ideas to life.
+            <p className="text-sm text-gray-600">
+              Discover a new way to collaborate on code, debug issues, and bring your ideas to life.
             </p>
-            <p className="text-sm text-gray-500">Let's build something amazing together!</p>
+            <p className="text-xs text-gray-400">Enjoy the power of instant AI-driven coding.</p>
           </div>
         </CardContent>
       </Card>
